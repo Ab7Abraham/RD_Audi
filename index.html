@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: monospace;
+}
+body{
+background:  url(https://wallpaperaccess.com/full/1672435.jpg);
+margin-bottom: 30%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+section{
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card{
+width: 400px;
+height: 600px;
+margin-right: 60%;
+background-color: rgb(255, 243, 243);
+display: flex;
+flex-direction: column;
+position: fixed;
+}
+.image{
+width: 100%;
+height: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.controls{
+width: 100%;
+height: 60%;
+padding: 15px;
+}
+.buttonCar{
+width: 32px;
+height: 32px;
+border-radius: 100%;
+border: none;
+color: transparent;
+border: 1px solid black;
+}
+#spanCar{
+width: 32px;
+height: 15px;
+padding: 0px 5px 0px 5px;
+background-color: red;
+font-weight: 800;
+color: #ffffff;
+border-radius: 3px;
+}
+.list{
+padding-right: 25px;
+font-size: 15px;
+font-weight: 800;
+color: rgb(254, 3, 3);
+
+}
+.addToCart{
+margin: 25px;
+width: 70%;
+height: 7vh;
+background-color: rgb(6, 229, 236);
+color: black;
+border-radius: 18px;
+border: none;
+font-size: large;
+font-weight: 800;
+}
+.addToCart:hover{
+background-color: gray;
+color: rgb(11, 180, 242);
+transition: .7s;
+}
+#red:hover{
+background-color: rgb(175, 4, 4)!important;
+transition: .7s;
+}
+#blue:hover{
+background-color: rgb(43, 21, 238)!important;
+transition: .7s;
+}
+#black:hover{
+background-color: rgb(0, 0, 0)!important;
+transition: .7s;
+}
+</style>
+</head>
+<body>
+<section>
+<div class="card">
+<div class="image">
+<img src="https://imgd.aeplcdn.com/370x208/n/p070ota_1501215.jpg?q=75" id="img">
+</div>
+<div class="controls">
+<p id="spanCar">car</p>
+<h1 style="padding: 10px; font-size: 28px; color: rgb(7, 7, 7); font-weight: 900;">Audi A4(Variants)</h1>
+<p class="list">🚗 Mileage: 4km/l</p>
+<p class="list">⛽ Tank Capacity: 25L</p><br>
+<p class="list">Rating: ⭐⭐⭐⭐⭐</p><br><br>
+<h3 style="color: rgb(18, 17, 17); font-weight: 900;">Pick a Color</h3><br>
+<button onclick="red()" id="red" class="buttonCar" style="background-color: rgb(241, 94, 94);">red
+</button>
+<button onclick="blue()" id="blue" class="buttonCar" style="background-color: rgb(76, 76, 247);">blu</button>
+<button onclick="black()" id="black" class="buttonCar" style="background-color: rgb(26, 24, 24);">bla</button>
+<button class="addToCart">Proceed to checkout</button>
+</div>
+</div>
+</section>
+<script>
+red = () => document.getElementById("img").setAttribute("src", "https://c4.wallpaperflare.com/wallpaper/928/210/480/red-audi-a4-sedan-forest-grass-wallpaper-preview.jpg")
+blue = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/anh0ota_1501209.jpg?q=75")
+black = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/nb80ota_1501211.jpg?q=75")
+</script>
+</body>
+</html>
